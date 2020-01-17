@@ -38,7 +38,7 @@ def update_counting_hash(hash, key)
   while hash[key] do
     hash[key] += 1
   end
-  while (hash[key] == flase) do
+  while !hash[key] do
     hash[key] = 1
   end
   return hash
